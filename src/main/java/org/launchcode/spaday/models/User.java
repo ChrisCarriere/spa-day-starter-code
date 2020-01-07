@@ -13,8 +13,8 @@ public class User {
     @Email
     private String email;
 
-    @NotBlank
-    @Size(min = 6, message = "Password must be at least 6 characters")
+    @NotBlank()
+    @Size(min = 6, message = "Password must be at least 6 characters!")
     private String password;
 
     public User() {
