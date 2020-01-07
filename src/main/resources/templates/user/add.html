@@ -35,10 +35,9 @@
         <div id="frm">
         <label>
             Verify Password:
-            <input type = 'password' name = 'verify'>
+            <input type = 'password' th:field="${user.verifyPassword}">
         </label>
-
-        <p th:text="${error}"></p>
+        <p th:errors="${user.verifyPassword}"></p>
         </div>
 
         <input type = 'submit' value = 'Sign Up'>
